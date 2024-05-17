@@ -107,7 +107,11 @@ const ImageUpload = () => {
   };
   return (
     <div>
-      <input type="file" onChange={handleImageChange} />
+      <input 
+        type="file" 
+        accept=".png, .jpg, .jpeg, .gif, .webp"
+        onChange={handleImageChange} 
+      />
       {selectedImage && (
         <div>
           <h2>Selected Image Preview:</h2>
